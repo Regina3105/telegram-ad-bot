@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: telegram-ad-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python telegram_ad_bot_nocontacts.py"
+    pythonVersion: 3.10.12
